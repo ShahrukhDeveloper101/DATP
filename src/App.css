@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* #root {
+  text-align: center;
+} */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* CSS for logos inside Navbar.Brand */
+.navbar .navbar_brand .logo {
+  width: 10rem;
+  padding: 0;
+}
+.navbar .nav_link, .navbar .dropdown{
+  color: black;
+  margin: 0 1rem;
+}
+.navbar .register_btn{
+  color: #01b2ff;
+  font-weight: 600;
+}
+.registartion_box{
+  border: 2px solid #01b2ff;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #01b2ff;
+  font-size: 1.25rem;
+  transition: .3s ease-in-out;
+}
+.registartion_box:hover{
+  box-shadow: 0px 0px 50px #01b3ff59;
+  color: #01b2ff;
+  background-color: whitesmoke;
+}
+.registration_page{
+  min-height: 65vh;
+}
+
+/* User Registration Component css code starting from here */
+#userRegistrationPage .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 600;
+}
+#userRegistrationPage .subheading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: normal;
+  color: rgb(82, 82, 82);
+  font-size: 18px;
+}
+#userRegistrationPage .email{
+  border: 1px solid lightgray;
+  box-shadow: none;
+}
+#userRegistrationPage .email:focus{
+  border-color: rgb(117, 117, 117);
+}
+#userRegistrationPage .create_account_btn{
+  border: 1px solid lightgray;
+  width: 100%;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+#userRegistrationPage .create_account_btn:hover{
+  background-color: whitesmoke;
+}
+#userRegistrationPage .checkbox{
+  width: 1.5rem;
+  height: 1.5rem;
+  /* background-color: ; */
+}
+#userRegistrationPage .checkbox_area {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+#userRegistrationPage .checkbox_area input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+#userRegistrationPage .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#userRegistrationPage .checkbox_area:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+#userRegistrationPage .checkbox_area input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#userRegistrationPage .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#userRegistrationPage .checkbox_area input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#userRegistrationPage .checkbox_area .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#userRegistrationPage .terms_line{
+  font-weight: normal;
+}
+#userRegistrationPage a{
+  color: #2196F3;
+  text-decoration: underline;
+}
+#userRegistrationPage .sign_in_line{
+  margin-top: 1rem;
+  font-weight: normal;
+}
+/* HomeComponent css starting from here */
+#HomeComponent .doctors_btn{
+  background-color: #01b2ff;
+  color: white;
+  padding: 7.5px 15px;
+  border-radius: 1.25rem;
+  border: 1.5px solid #01b2ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#HomeComponent .doctors_btn:hover{
+  background-color: #2196F3;
+  border-color: black;
+}
+#HomeComponent .heading{
+  font-weight: bold;
+  font-family: "Albert Sans", sans-serif;
+  margin: 1rem 0;
+}
+#HomeComponent .subheading{
+  font-weight: normal;
+  font-family: "Albert Sans", sans-serif;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+#SearchDocComponent .search_city_area{
+  position: relative;
+}
+#SearchDocComponent .search_bar{
+  width: 100%;
+  padding:.75rem;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 1.5rem;
+  color: black;
+}
+#SearchDocComponent .search_btn{
+  position: absolute;
+  right: .5rem;
+  border-radius: 1rem;
+  padding: 5.75px 1rem;
+  top: .38rem;
+  border: 1px solid #01b2ff;
+  background-color: #01b2ff;
+  color: white;
+  font-weight: 600;
+}
+#SearchDocComponent .search_btn:hover{
+  background-color: #2196F3;
+  color: rgba(255, 255, 255, 0.9);
+}
+#HomeComponent .animation_video{
+  width: 40rem;
+  float: right;
+}
+#HomeComponent .img_area{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#HomeComponent .img_area_move1{
+  margin-left: -.5rem;
+}
+#HomeComponent .img_area_move2{
+  margin-left: -1rem;
+}
+#HomeComponent .img_area_move3{
+  margin-left: -1.5rem;
+}
+#HomeComponent .img_area_move4{
+  margin-left: -2rem;
+}
+#HomeComponent .img_area_move5{
+  margin-left: -2.5rem;
+}
+#HomeComponent .star_rating{
+  color: rgb(254, 200, 75);
+  font-size: 1.2rem;
+}
+#HomeComponent .rating_data{
+  display: flex;
+  align-items: end;
+  color: #01b2ff;
+  font-size: 1rem;
+  margin: .5rem 0;
+}
+#HomeComponent .rating_data p{
+  font-size: .9rem;
+  padding-left: 0.5rem;
+  margin: 0;
+}
+#HomeComponent .points_row h5{
+  font-size: .75rem;
+}
+#HomeComponent .check_mark{
+  color: #01b2ff;
+  padding-right: .25rem;
+}
+#HomeComponent h5.bullet_point{
+  color: grey;
+}
+/* CategoriesComponent css starting from here */
+#CategoriesComponent .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+#CategoriesComponent .category_area{
+  width: 100%;
+  background-color: #ffffff;
+  color: #01b2ff;
+  border-radius: 1rem;
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 6rem;
+  border: 2px solid #01b2ff;
+  transition: .1s ease-in-out;
+}
+#CategoriesComponent .category_area:hover{
+  background-color: #01b2ff;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+/* BlogsComponent css starting from here */
+#BlogsComponent .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+#BlogsComponent .blog_area .blog_item .blog_img_area{
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 16rem;
+}
+#BlogsComponent .blog_area .blog_item .blog_img_area img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#BlogsComponent .blog_area .blog_item .blog_detail{
+  padding: 1rem 0;
+}
+#BlogsComponent .blog_area .blog_item .blog_detail .title{
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-family: "Albert Sans", sans-serif;
+  padding-bottom: .5rem;
+  transition: .2s ease-in-out;
+  color: black;
+}
+#BlogsComponent .blog_area .blog_item .blog_detail .title:hover{
+  color: #01b2ff;
+}
+#BlogsComponent .blog_area .blog_item .blog_detail .description{
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Albert Sans", sans-serif;
+  padding: .5rem 0;
+  transition: .2s ease-in-out;
+  line-height: 1.8rem;
+}
+#BlogsComponent .blog_area .blog_item .blog_detail .title:hover{
+  color: #01b2ff;
+}
+/* HowWorksComponent css starting from here */
+#HowWorksComponent .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+#HowWorksComponent .item{
+  border: 1px solid rgba(211, 211, 211, 0.8);
+  height: 15rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#HowWorksComponent .item .icon{
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  margin-right: auto;
+}
+#HowWorksComponent .item h4{
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Albert Sans", sans-serif;
+} 
+#HowWorksComponent .item h5{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Albert Sans", sans-serif;
+  line-height: 1.5rem;
+}
+/* QuestionsComponent css starting from here */
+#QuestionsComponent {
+  margin-bottom: 2.5rem;
+  background-color: rgba(0, 179, 255, 0.3);
+  border-radius: 1rem;
+  padding: 4rem 3rem;
+}
+#QuestionsComponent .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 600;
+  color: #2196F3;
+}
+#QuestionsComponent ul{
+  padding-left: 0rem;
+}
+#QuestionsComponent ul li{
+  list-style: none;
+  color: black;
+  font-family: "Albert Sans", sans-serif;
+}
+#QuestionsComponent ul li .icon{
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+  color: #2196F3;
+}
+#QuestionsComponent .all_questions_btn{
+  padding: .7rem 1.5rem;
+  margin: 0 1rem;
+  background-color: white;
+  color: #2196F3;
+  border-radius: .5rem;
+  border: 1px solid #2196F3;
+  font-weight: 600;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.1s ease-in-out;
+  width: fit-content;
+}
+#QuestionsComponent .all_questions_btn:hover{
+  color: white;
+  background-color: #2196F3;
+}
+#QuestionsComponent .ask_question_btn{
+  padding: .7rem 1.5rem;
+  margin: 0 1rem;
+  background-color: #2196F3;
+  color: #ffffff;
+  border-radius: .5rem;
+  border: 1px solid #2196F3;
+  width: fit-content;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+#QuestionsComponent .ask_question_btn:hover{
+  color: #2196F3;
+  background-color: #ffffff;
+}
+/* ReviewsComponent css starting from here */
+#ReviewsComponent{
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  background-color: aliceblue;
+}
+#ReviewsComponent .heading{
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+#ReviewsComponent .review{
+  background-color: white;
+  margin: 1.25rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: .6rem;
+}
+#ReviewsComponent .rating_stars{
+  padding-bottom: 1rem;
+}
+#ReviewsComponent .rating_stars .star_rating{
+  color:rgb(254, 200, 75);
+  margin: 0 .15rem;
+}
+#ReviewsComponent .review_desc{
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Albert Sans", sans-serif;
+}
+#ReviewsComponent .review_user_data{
+  padding-top: 1rem;
+}
+#ReviewsComponent .review_user_data .img_area{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 3rem;
+  margin: 0 auto;
+  height: 3rem;
+}
+#ReviewsComponent .review_user_data .user_name{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Albert Sans", sans-serif;
+}
+#ReviewsComponent .review_user_data .status{
+  font-size: .85rem;
+  font-weight: normal;
+  font-family: "Albert Sans", sans-serif;
+  color: grey;
+}
+/* FooterComponent css is starting from here */
+#FooterComponent{
+  padding: 5rem 0 3rem 0;
+  border-top: 1px solid rgb(117, 117, 117, 0.2);
+}
+#FooterComponent ul{
+  padding: 0;
+  list-style: none;
+}
+#FooterComponent ul b{
+  font-size: 1.2rem;
+  font-family: "Albert Sans", sans-serif;
+}
+#FooterComponent ul li{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Albert Sans", sans-serif;
+  margin: .5rem 0;
+}
+#FooterComponent .description{
+  padding: 1rem 0;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+/* CopyrightComponent css is starting from here */
+#CopyrightComponent{
+  padding: 2rem 0;
+  background-color: #023864;
+}
+#CopyrightComponent .circle_check{
+  color: white;
+  margin: auto 0;
+  font-size: 2rem;
+}
+#CopyrightComponent .content{
+  padding-left: 1rem;
+}
+#CopyrightComponent .content h5{
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Albert Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+#CopyrightComponent .content h6{
+  color: white;
+  font-size: .9rem;
+  padding: 0;
+  margin: .25rem 0;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: normal;
+}
+#CopyrightComponent hr{
+  color: white;
+  margin: 2rem 0;
+}
+#CopyrightComponent .copyright{
+  color: white;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+#CopyrightComponent .copyright .highlight{
+  color: rgb(255, 234, 0);
+  font-weight: bold;
+  padding: 0 4px;
+}
+/* DoctorsComponent css starting from here */
+#DoctorsComponent{
+  padding: 2rem 0;
+}
+#DoctorsComponent .heading{
+  /* font-size: 1.2rem; */
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+}
+#DoctorsComponent .doctors_record_box{
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+  margin: 2rem 0;
+  border-radius: .75rem;
+}
+#DoctorsComponent .doctors_record_box h5{
+  font-size: 1.1rem;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+}
+#DoctorsComponent .doctors_record_box .record_area{
+  margin: 1rem 0;
+}
+#DoctorsComponent .doctors_record_box .record_area .link{
+  color: #023864;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: .95rem;
+}
+#DoctorsComponent .doctors_record_box .record_area h6{
+  color: #023864;
+  font-weight: 500;
+  font-size: .9rem;
+}
+/* DoctorsPageComponent css starting from here */
+#DoctorsPageComponent{
+  padding: 2rem 0;
+}
+#DoctorsPageComponent .heading{
+  /* font-size: 1.2rem; */
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+}
+#DoctorsPageComponent .doctors_record_box{
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+  margin: 2rem 0;
+  border-radius: .75rem;
+}
+#DoctorsPageComponent .doctors_record_box h5{
+  font-size: 1.1rem;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+}
+#DoctorsPageComponent .doctors_record_box .record_area{
+  margin: 1rem 0;
+}
+
+
+
+/* Popup.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px; /* Adjust width as needed */
+}
+
+.popup-close-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

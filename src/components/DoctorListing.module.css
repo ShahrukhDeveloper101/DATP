@@ -1,0 +1,159 @@
+/* DoctorListing.module.css */
+.doctorListingContent {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .doctorListingContent:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .doctorImage {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #01b2ff;
+  }
+  
+  .doctorName {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.2rem;
+  }
+  
+  .doctorStatus {
+    color: #28a745;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.2rem;
+  }
+  
+  .doctorSpecialty {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .doctorEducation {
+    font-style: italic;
+    color: #777;
+    font-size: 0.95rem;
+  }
+  
+  .doctorDetails {
+    margin-top: 1rem;
+  }
+  
+  .detailTitle {
+    font-family: "Albert Sans", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .detailSubtitle {
+    font-size: 0.9rem;
+    color: grey;
+    margin-top: 0.2rem;
+  }
+  
+  .bookingOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btnVideoConsultation {
+    text-align: center;
+    background-color: #ffffff;
+    color: #01b2ff;
+    border: 1px solid #01b2ff;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btnVideoConsultation:hover {
+    background-color: #01b2ff;
+    color: #ffffff;
+  }
+  
+  .btnViewProfile {
+    text-align: center;
+    background-color: #01b2ff;
+    color: white;
+    border: 1px solid #01b2ff;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btnViewProfile:hover {
+    color: #ffffff;
+    background-color: #2196F3;
+  }
+  
+  .consultationInfo {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: .5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .consultationType {
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .videoConsultationSection {
+    background-color: white;
+    padding: 1.3rem 1.5rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .videoConsultationSection:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .availability {
+    color: #28a745;
+  }
+
+  .consultationPrice{
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .btnViewSchedule {
+    text-align: center;
+    background-color: #ffc107;
+    color: black;
+    border: 1px solid #ffc107;
+    display: block;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1.2rem;
+  }
+  
+  .btnViewSchedule:hover {
+    background-color: #e0a800;
+    color: #000000;
+  }
+  
